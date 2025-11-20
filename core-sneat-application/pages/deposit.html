@@ -1,0 +1,72 @@
+<!-- Deposit Page -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0">Deposit Transaction</h5>
+      </div>
+      <div class="card-body">
+        <!-- Account Information -->
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <label class="form-label">Account ID</label>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="00101000013" />
+              <button class="btn btn-outline-secondary" type="button">
+                <i class="bx bx-search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Account Name</label>
+            <input type="text" class="form-control" readonly />
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Current Balance</label>
+            <input type="text" class="form-control" readonly />
+          </div>
+        </div>
+
+        <!-- Transaction Details -->
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <label class="form-label">Amount</label>
+            <input type="number" class="form-control" placeholder="0.00" step="0.01" />
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Currency</label>
+            <select class="form-select">
+              <option>TSH</option>
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Transaction Date</label>
+            <input type="date" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <label class="form-label">Narrative</label>
+            <textarea class="form-control" rows="3" placeholder="Enter transaction description"></textarea>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex gap-2 mt-4">
+          <button class="btn btn-primary" type="button">
+            <i class="bx bx-check me-1"></i> Process Deposit
+          </button>
+          <button class="btn btn-outline-secondary" type="button">
+            <i class="bx bx-x me-1"></i> Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

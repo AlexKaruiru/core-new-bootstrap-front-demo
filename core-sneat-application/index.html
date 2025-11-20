@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<!-- =========================================================
+* Core Banking System - Bankers Realm
+* Based on Sneat Bootstrap 5 HTML Admin Template
+========================================================= -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Core Banking System - Bankers Realm</title>
+
+    <meta name="description" content="Core Banking System - Bankers Realm" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Custom Banking Theme CSS -->
+    <link rel="stylesheet" href="css/banking-theme.css" />
+
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!-- Config: Mandatory theme config file -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Sidebar - Embedded directly to avoid CORS issues -->
+        <div id="sidebar-container">
+          <!-- Sidebar Component - Matching Sneat Structure with Banking Menu -->
+          <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+            <div class="app-brand demo">
+              <a href="index.html" class="app-brand-link">
+                <span class="app-brand-logo demo">
+                  <svg width="25" viewBox="0 0 25 42" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <path
+                        d="M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z"
+                        id="path-1"
+                      ></path>
+                    </defs>
+                    <g id="g-app-brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Brand-Logo" transform="translate(-27.000000, -15.000000)">
+                        <g id="Icon" transform="translate(27.000000, 15.000000)">
+                          <g id="Mask" transform="translate(0.000000, 8.000000)">
+                            <mask id="mask-2" fill="white">
+                              <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use fill="#696cff" xlink:href="#path-1"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span class="app-brand-text demo menu-text fw-bolder ms-2">Bankers Realm</span>
+              </a>
+
+              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                <i class="bx bx-chevron-left bx-sm align-middle"></i>
+              </a>
+            </div>
+
+            <div class="menu-inner-shadow"></div>
+
+            <ul class="menu-inner py-1">
+              <!-- Home -->
+              <li class="menu-item active">
+                <a href="javascript:void(0);" class="menu-link" data-page="home" data-title="Home">
+                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                  <div data-i18n="Home">Home</div>
+                </a>
+              </li>
+
+              <!-- Reports -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-file"></i>
+                  <div data-i18n="Reports">Reports</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="reports" data-title="Reports">
+                      <div data-i18n="Reports">Reports</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="report-writer" data-title="Report Writer">
+                      <div data-i18n="Report Writer">Report Writer</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Identities -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="identities" data-title="Identities">
+                  <i class="menu-icon tf-icons bx bx-id-card"></i>
+                  <div data-i18n="Identities">Identities</div>
+                </a>
+              </li>
+
+              <!-- Account -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-wallet"></i>
+                  <div data-i18n="Account">Account</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="account-maintenance" data-title="Account Maintenance">
+                      <div data-i18n="Maintenance">Maintenance</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="account-opening" data-title="Account Opening">
+                      <div data-i18n="Opening">Opening</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Deposit -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="deposit" data-title="Deposit">
+                  <i class="menu-icon tf-icons bx bx-money"></i>
+                  <div data-i18n="Deposit">Deposit</div>
+                </a>
+              </li>
+
+              <!-- Limits & Collateral -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-lock"></i>
+                  <div data-i18n="Limits & Collateral">Limits & Collateral</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="limits" data-title="Limits">
+                      <div data-i18n="Limits">Limits</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="collateral" data-title="Collateral">
+                      <div data-i18n="Collateral">Collateral</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Workflow Setting -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="workflow-setting" data-title="Workflow Setting">
+                  <i class="menu-icon tf-icons bx bx-cog"></i>
+                  <div data-i18n="Workflow Setting">Workflow Setting</div>
+                </a>
+              </li>
+
+              <!-- Workflow Loan -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="workflow-loan" data-title="Workflow Loan">
+                  <i class="menu-icon tf-icons bx bx-list-check"></i>
+                  <div data-i18n="Workflow Loan">Workflow Loan</div>
+                </a>
+              </li>
+
+              <!-- Loans -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-credit-card"></i>
+                  <div data-i18n="Loans">Loans</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="loan-application" data-title="Loan Application">
+                      <div data-i18n="Application">Application</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="overdrafts" data-title="Overdrafts">
+                      <div data-i18n="Overdrafts">Overdrafts</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Images -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="images" data-title="Images">
+                  <i class="menu-icon tf-icons bx bx-image"></i>
+                  <div data-i18n="Images">Images</div>
+                </a>
+              </li>
+
+              <!-- Transaction -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="transactions" data-title="Transactions">
+                  <i class="menu-icon tf-icons bx bx-transfer"></i>
+                  <div data-i18n="Transaction">Transaction</div>
+                </a>
+              </li>
+
+              <!-- Process -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="process" data-title="Process">
+                  <i class="menu-icon tf-icons bx bx-refresh"></i>
+                  <div data-i18n="Process">Process</div>
+                </a>
+              </li>
+
+              <!-- MicroFinance -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="microfinance" data-title="MicroFinance">
+                  <i class="menu-icon tf-icons bx bx-group"></i>
+                  <div data-i18n="MicroFinance">MicroFinance</div>
+                </a>
+              </li>
+
+              <!-- Treasury -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="treasury" data-title="Treasury">
+                  <i class="menu-icon tf-icons bx bx-trending-up"></i>
+                  <div data-i18n="Treasury">Treasury</div>
+                </a>
+              </li>
+
+              <!-- Trade Finance -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="trade-finance" data-title="Trade Finance">
+                  <i class="menu-icon tf-icons bx bx-briefcase"></i>
+                  <div data-i18n="Trade Finance">Trade Finance</div>
+                </a>
+              </li>
+
+              <!-- FixedAsset -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="fixed-asset" data-title="Fixed Asset">
+                  <i class="menu-icon tf-icons bx bx-building"></i>
+                  <div data-i18n="FixedAsset">FixedAsset</div>
+                </a>
+              </li>
+
+              <!-- Other Modules -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="other-modules" data-title="Other Modules">
+                  <i class="menu-icon tf-icons bx bx-grid-alt"></i>
+                  <div data-i18n="Other Modules">Other Modules</div>
+                </a>
+              </li>
+
+              <!-- General Ledger -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="general-ledger" data-title="General Ledger">
+                  <i class="menu-icon tf-icons bx bx-book"></i>
+                  <div data-i18n="General Ledger">General Ledger</div>
+                </a>
+              </li>
+
+              <!-- Product -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="product" data-title="Product">
+                  <i class="menu-icon tf-icons bx bx-package"></i>
+                  <div data-i18n="Product">Product</div>
+                </a>
+              </li>
+
+              <!-- Charges & Rates -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="charges-rates" data-title="Charges & Rates">
+                  <i class="menu-icon tf-icons bx bx-dollar"></i>
+                  <div data-i18n="Charges & Rates">Charges & Rates</div>
+                </a>
+              </li>
+
+              <!-- Static Data -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-data"></i>
+                  <div data-i18n="Static Data">Static Data</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="static-data-bank-info" data-title="Bank Information">
+                      <div data-i18n="Bank Information">Bank Information</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="static-data-branches" data-title="Branches">
+                      <div data-i18n="Branches">Branches</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="static-data-system-codes" data-title="System Codes">
+                      <div data-i18n="System Codes">System Codes</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="static-data-user-codes" data-title="User Codes">
+                      <div data-i18n="User Codes">User Codes</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="static-data-currencies" data-title="Currencies">
+                      <div data-i18n="Currencies">Currencies</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="static-data-charges" data-title="Charges & Rates">
+                      <div data-i18n="Charges & Rates">Charges & Rates</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- System Security -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-shield"></i>
+                  <div data-i18n="System Security">System Security</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="system-security-users" data-title="Users">
+                      <div data-i18n="Users">Users</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="system-security-roles" data-title="Roles">
+                      <div data-i18n="Roles">Roles</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="system-security-permissions" data-title="Permissions">
+                      <div data-i18n="Permissions">Permissions</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Utilities -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-wrench"></i>
+                  <div data-i18n="Utilities">Utilities</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="utilities-audit" data-title="System Audit">
+                      <div data-i18n="System Audit">System Audit</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="utilities-backup" data-title="Backup & Restore">
+                      <div data-i18n="Backup & Restore">Backup & Restore</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Clearing -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link" data-page="clearing" data-title="Clearing">
+                  <i class="menu-icon tf-icons bx bx-check-circle"></i>
+                  <div data-i18n="Clearing">Clearing</div>
+                </a>
+              </li>
+
+              <!-- Swift -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-globe"></i>
+                  <div data-i18n="Swift">Swift</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="swift-outgoing" data-title="Swift Outgoing Head Office">
+                      <div data-i18n="Outgoing">Outgoing</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="swift-incoming" data-title="Swift Incoming">
+                      <div data-i18n="Incoming">Incoming</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- System Utilities -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-cog"></i>
+                  <div data-i18n="System Utilities">System Utilities</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="utilities-audit" data-title="System Audit">
+                      <div data-i18n="System Audit">System Audit</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link" data-page="utilities-backup" data-title="Backup & Restore">
+                      <div data-i18n="Backup & Restore">Backup & Restore</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <!-- / Sidebar -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar - Embedded directly to avoid CORS issues -->
+          <div id="navbar-container">
+            <nav
+              class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+              id="layout-navbar"
+            >
+              <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                  <i class="bx bx-menu bx-sm"></i>
+                </a>
+              </div>
+
+              <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                <!-- Search -->
+                <div class="navbar-nav align-items-center">
+                  <div class="nav-item d-flex align-items-center">
+                    <i class="bx bx-search fs-4 lh-0"></i>
+                    <input
+                      type="text"
+                      class="form-control border-0 shadow-none"
+                      placeholder="Search..."
+                      aria-label="Search..."
+                    />
+                  </div>
+                </div>
+                <!-- /Search -->
+
+                <ul class="navbar-nav flex-row align-items-center ms-auto">
+                  <!-- User -->
+                  <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                    <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                      <div class="avatar avatar-online">
+                        <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'avatar-initial rounded bg-label-primary\'><i class=\'bx bx-user\'></i></span>';" />
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar avatar-online">
+                                <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'avatar-initial rounded bg-label-primary\'><i class=\'bx bx-user\'></i></span>';" />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <span class="fw-semibold d-block" id="navbar-username">CSADM</span>
+                              <small class="text-muted">Administrator</small>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="javascript:void(0);">
+                          <i class="bx bx-user me-2"></i>
+                          <span class="align-middle">My Profile</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="javascript:void(0);">
+                          <i class="bx bx-cog me-2"></i>
+                          <span class="align-middle">Settings</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="javascript:void(0);" id="logout-btn">
+                          <i class="bx bx-power-off me-2"></i>
+                          <span class="align-middle">Log Out</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--/ User -->
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <!-- Tab Container -->
+              <div id="tab-container" class="tab-container">
+                <!-- Tab Bar -->
+                <div id="tab-bar" class="tab-bar">
+                  <!-- Tabs will be dynamically added here -->
+                </div>
+                <!-- Tab Content Area -->
+                <div id="tab-content-area" class="tab-content-area">
+                  <!-- Content will be loaded dynamically -->
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer - Embedded directly to avoid CORS issues -->
+            <div id="footer-container">
+              <footer class="content-footer footer bg-footer-theme">
+                <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                  <div class="mb-2 mb-md-0">
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                     by
+                    <a href="javascript:void(0);" target="_blank" class="footer-link fw-bolder">Craft Silicon</a>
+                  </div>
+                </div>
+              </footer>
+            </div>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Component Loader - Not needed since components are embedded, but keep for compatibility -->
+    <script src="js/component-loader.js"></script>
+
+    <!-- Responsive Handler - Must load early -->
+    <script src="js/responsive-handler.js"></script>
+
+    <!-- Session Manager - Must load before auth check -->
+    <script src="js/session-manager.js"></script>
+
+    <!-- Auth Check - Wait for SessionManager to load -->
+    <script>
+      (function() {
+        let authChecked = false;
+        
+        function checkAuth() {
+          if (authChecked) return;
+          
+          // Quick check for session
+          const isLoggedIn = sessionStorage.getItem('isLoggedIn') === 'true';
+          const sessionData = sessionStorage.getItem('sessionData');
+          
+          if (!isLoggedIn || !sessionData) {
+            authChecked = true;
+            window.location.replace('login.html');
+            return;
+          }
+          
+          // Wait for SessionManager if available
+          if (window.SessionManager) {
+            if (!window.SessionManager.isLoggedIn()) {
+              authChecked = true;
+              window.location.replace('login.html');
+            } else {
+              authChecked = true;
+            }
+          } else {
+            // Retry after a short delay
+            setTimeout(checkAuth, 100);
+          }
+        }
+        
+        // Start checking after DOM is ready
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', checkAuth);
+        } else {
+          setTimeout(checkAuth, 100);
+        }
+      })();
+    </script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- App Initializer - Ensures proper initialization order -->
+    <script src="js/app-initializer.js"></script>
+    
+    <!-- Menu Visibility Fix - Ensures menu is visible -->
+    <script src="js/menu-visibility-fix.js"></script>
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Dashboard Content - Must load BEFORE banking-tabs.js -->
+    <script src="js/dashboard-content.js"></script>
+
+    <!-- Custom Banking JS -->
+    <script src="js/banking-tabs.js"></script>
+    <script src="js/banking-app.js"></script>
+    
+    <!-- Menu Collapse Handler -->
+    <script src="js/menu-collapse-handler.js"></script>
+    
+    <!-- Dashboard Analytics JS -->
+    <script src="js/dashboard-analytics.js"></script>
+    
+    <!-- Logout Handler -->
+    <script>
+      (function() {
+        document.addEventListener('DOMContentLoaded', function() {
+          const logoutBtn = document.getElementById('logout-btn');
+          if (logoutBtn) {
+            logoutBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              if (window.SessionManager) {
+                window.SessionManager.logout();
+              } else {
+                // Fallback logout
+                sessionStorage.clear();
+                localStorage.removeItem('rememberMe');
+                window.location.replace('login.html');
+              }
+            });
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

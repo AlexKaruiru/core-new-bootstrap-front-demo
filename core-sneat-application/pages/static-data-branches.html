@@ -1,0 +1,78 @@
+<!-- Static Data - Branches Page -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header d-flex align-items-center justify-content-between">
+        <h5 class="card-title mb-0">Branches</h5>
+        <button class="btn btn-sm btn-primary" type="button">
+          <i class="bx bx-plus me-1"></i> Add Branch
+        </button>
+      </div>
+      <div class="card-body">
+        <!-- Search and Filter -->
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Search branches..." />
+          </div>
+          <div class="col-md-2">
+            <select class="form-select">
+              <option>All Status</option>
+              <option>Active</option>
+              <option>Inactive</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary w-100" type="button">
+              <i class="bx bx-search me-1"></i> Search
+            </button>
+          </div>
+        </div>
+
+        <!-- Branches Table -->
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Branch ID</th>
+                <th>Branch Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>000</td>
+                <td>HEAD OFFICE - ADMIN</td>
+                <td>Main Street, City Center</td>
+                <td>+255 22 123 4567</td>
+                <td><span class="badge bg-label-success">Active</span></td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary" type="button">
+                    <i class="bx bx-edit"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>001</td>
+                <td>Main Branch - Moshi</td>
+                <td>Moshi Street, Moshi</td>
+                <td>+255 27 123 4567</td>
+                <td><span class="badge bg-label-success">Active</span></td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary" type="button">
+                    <i class="bx bx-edit"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

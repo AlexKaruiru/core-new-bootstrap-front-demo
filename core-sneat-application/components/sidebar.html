@@ -1,0 +1,379 @@
+<!-- Sidebar Component - Matching Sneat Structure with Banking Menu -->
+<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+  <div class="app-brand demo">
+    <a href="index.html" class="app-brand-link">
+      <span class="app-brand-logo demo">
+        <svg width="25" viewBox="0 0 25 42" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <path
+              d="M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z"
+              id="path-1"
+            ></path>
+          </defs>
+          <g id="g-app-brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Brand-Logo" transform="translate(-27.000000, -15.000000)">
+              <g id="Icon" transform="translate(27.000000, 15.000000)">
+                <g id="Mask" transform="translate(0.000000, 8.000000)">
+                  <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                  </mask>
+                  <use fill="#696cff" xlink:href="#path-1"></use>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </span>
+      <span class="app-brand-text demo menu-text fw-bolder ms-2">Bankers Realm</span>
+    </a>
+
+    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+      <i class="bx bx-chevron-left bx-sm align-middle"></i>
+    </a>
+  </div>
+
+  <div class="menu-inner-shadow"></div>
+
+  <ul class="menu-inner py-1">
+    <!-- Home -->
+    <li class="menu-item active">
+      <a href="javascript:void(0);" class="menu-link" data-page="home" data-title="Home">
+        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+        <div data-i18n="Home">Home</div>
+      </a>
+    </li>
+
+    <!-- Reports -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-file"></i>
+        <div data-i18n="Reports">Reports</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="reports" data-title="Reports">
+            <div data-i18n="Reports">Reports</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="report-writer" data-title="Report Writer">
+            <div data-i18n="Report Writer">Report Writer</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Identities -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="identities" data-title="Identities">
+        <i class="menu-icon tf-icons bx bx-id-card"></i>
+        <div data-i18n="Identities">Identities</div>
+      </a>
+    </li>
+
+    <!-- Account -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-wallet"></i>
+        <div data-i18n="Account">Account</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="account-maintenance" data-title="Account Maintenance">
+            <div data-i18n="Maintenance">Maintenance</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="account-opening" data-title="Account Opening">
+            <div data-i18n="Opening">Opening</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Deposit -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="deposit" data-title="Deposit">
+        <i class="menu-icon tf-icons bx bx-money"></i>
+        <div data-i18n="Deposit">Deposit</div>
+      </a>
+    </li>
+
+    <!-- Limits & Collateral -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-lock"></i>
+        <div data-i18n="Limits & Collateral">Limits & Collateral</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="limits" data-title="Limits">
+            <div data-i18n="Limits">Limits</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="collateral" data-title="Collateral">
+            <div data-i18n="Collateral">Collateral</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Workflow Setting -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="workflow-setting" data-title="Workflow Setting">
+        <i class="menu-icon tf-icons bx bx-cog"></i>
+        <div data-i18n="Workflow Setting">Workflow Setting</div>
+      </a>
+    </li>
+
+    <!-- Workflow Loan -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="workflow-loan" data-title="Workflow Loan">
+        <i class="menu-icon tf-icons bx bx-list-check"></i>
+        <div data-i18n="Workflow Loan">Workflow Loan</div>
+      </a>
+    </li>
+
+    <!-- Loans -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-credit-card"></i>
+        <div data-i18n="Loans">Loans</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="loan-application" data-title="Loan Application">
+            <div data-i18n="Application">Application</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="overdrafts" data-title="Overdrafts">
+            <div data-i18n="Overdrafts">Overdrafts</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Images -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="images" data-title="Images">
+        <i class="menu-icon tf-icons bx bx-image"></i>
+        <div data-i18n="Images">Images</div>
+      </a>
+    </li>
+
+    <!-- Transaction -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="transactions" data-title="Transactions">
+        <i class="menu-icon tf-icons bx bx-transfer"></i>
+        <div data-i18n="Transaction">Transaction</div>
+      </a>
+    </li>
+
+    <!-- Process -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="process" data-title="Process">
+        <i class="menu-icon tf-icons bx bx-refresh"></i>
+        <div data-i18n="Process">Process</div>
+      </a>
+    </li>
+
+    <!-- MicroFinance -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="microfinance" data-title="MicroFinance">
+        <i class="menu-icon tf-icons bx bx-group"></i>
+        <div data-i18n="MicroFinance">MicroFinance</div>
+      </a>
+    </li>
+
+    <!-- Treasury -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="treasury" data-title="Treasury">
+        <i class="menu-icon tf-icons bx bx-trending-up"></i>
+        <div data-i18n="Treasury">Treasury</div>
+      </a>
+    </li>
+
+    <!-- Trade Finance -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="trade-finance" data-title="Trade Finance">
+        <i class="menu-icon tf-icons bx bx-briefcase"></i>
+        <div data-i18n="Trade Finance">Trade Finance</div>
+      </a>
+    </li>
+
+    <!-- FixedAsset -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="fixed-asset" data-title="Fixed Asset">
+        <i class="menu-icon tf-icons bx bx-building"></i>
+        <div data-i18n="FixedAsset">FixedAsset</div>
+      </a>
+    </li>
+
+    <!-- Other Modules -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="other-modules" data-title="Other Modules">
+        <i class="menu-icon tf-icons bx bx-grid-alt"></i>
+        <div data-i18n="Other Modules">Other Modules</div>
+      </a>
+    </li>
+
+    <!-- General Ledger -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="general-ledger" data-title="General Ledger">
+        <i class="menu-icon tf-icons bx bx-book"></i>
+        <div data-i18n="General Ledger">General Ledger</div>
+      </a>
+    </li>
+
+    <!-- Product -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="product" data-title="Product">
+        <i class="menu-icon tf-icons bx bx-package"></i>
+        <div data-i18n="Product">Product</div>
+      </a>
+    </li>
+
+    <!-- Charges & Rates -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="charges-rates" data-title="Charges & Rates">
+        <i class="menu-icon tf-icons bx bx-dollar"></i>
+        <div data-i18n="Charges & Rates">Charges & Rates</div>
+      </a>
+    </li>
+
+    <!-- Static Data -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-data"></i>
+        <div data-i18n="Static Data">Static Data</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="static-data-bank-info" data-title="Bank Information">
+            <div data-i18n="Bank Information">Bank Information</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="static-data-branches" data-title="Branches">
+            <div data-i18n="Branches">Branches</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="static-data-system-codes" data-title="System Codes">
+            <div data-i18n="System Codes">System Codes</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="static-data-user-codes" data-title="User Codes">
+            <div data-i18n="User Codes">User Codes</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="static-data-currencies" data-title="Currencies">
+            <div data-i18n="Currencies">Currencies</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="static-data-charges" data-title="Charges & Rates">
+            <div data-i18n="Charges & Rates">Charges & Rates</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- System Security -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-shield"></i>
+        <div data-i18n="System Security">System Security</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="system-security-users" data-title="Users">
+            <div data-i18n="Users">Users</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="system-security-roles" data-title="Roles">
+            <div data-i18n="Roles">Roles</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="system-security-permissions" data-title="Permissions">
+            <div data-i18n="Permissions">Permissions</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Utilities -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-wrench"></i>
+        <div data-i18n="Utilities">Utilities</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="utilities-audit" data-title="System Audit">
+            <div data-i18n="System Audit">System Audit</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="utilities-backup" data-title="Backup & Restore">
+            <div data-i18n="Backup & Restore">Backup & Restore</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Clearing -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link" data-page="clearing" data-title="Clearing">
+        <i class="menu-icon tf-icons bx bx-check-circle"></i>
+        <div data-i18n="Clearing">Clearing</div>
+      </a>
+    </li>
+
+    <!-- Swift -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-globe"></i>
+        <div data-i18n="Swift">Swift</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="swift-outgoing" data-title="Swift Outgoing Head Office">
+            <div data-i18n="Outgoing">Outgoing</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="swift-incoming" data-title="Swift Incoming">
+            <div data-i18n="Incoming">Incoming</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- System Utilities -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-cog"></i>
+        <div data-i18n="System Utilities">System Utilities</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="utilities-audit" data-title="System Audit">
+            <div data-i18n="System Audit">System Audit</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link" data-page="utilities-backup" data-title="Backup & Restore">
+            <div data-i18n="Backup & Restore">Backup & Restore</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</aside>
