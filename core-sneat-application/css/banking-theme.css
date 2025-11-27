@@ -244,6 +244,63 @@ body {
   font-size: 0.9375rem;
 }
 
+/* Date and Time Styling */
+.navbar-date-time {
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
+
+.navbar-date-time i {
+  font-size: 1rem;
+}
+
+#navbar-datetime {
+  font-weight: 500;
+  font-family: 'Courier New', monospace;
+}
+
+/* Bank Info Styling */
+.navbar-bank-info {
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
+
+.navbar-bank-info span {
+  font-weight: 500;
+}
+
+/* Responsive navbar adjustments */
+@media (max-width: 1199.98px) {
+  .navbar-date-time {
+    font-size: 0.8125rem;
+  }
+  
+  .navbar-bank-info {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-bank-info {
+    display: none; /* Hide on smaller tablets */
+  }
+  
+  .navbar-date-time {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-date-time {
+    display: none; /* Hide date/time on mobile - can show in dropdown if needed */
+  }
+  
+  .navbar-nav-right input[type="text"] {
+    min-width: 150px !important;
+    max-width: 150px;
+  }
+}
+
 /* Enterprise Menu Styling */
 .menu-item.active > .menu-link {
   background-color: rgba(105, 108, 255, 0.08);

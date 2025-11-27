@@ -461,16 +461,28 @@
                 <!-- Search -->
                 <div class="navbar-nav align-items-center">
                   <div class="nav-item d-flex align-items-center">
-                    <i class="bx bx-search fs-4 lh-0"></i>
+                    <i class="bx bx-search fs-4 lh-0 me-2"></i>
                     <input
                       type="text"
                       class="form-control border-0 shadow-none"
                       placeholder="Search..."
                       aria-label="Search..."
+                      style="min-width: 250px;"
                     />
                   </div>
                 </div>
                 <!-- /Search -->
+
+                <!-- Date and Time -->
+                <div class="navbar-date-time d-flex align-items-center ms-3 me-3">
+                  <i class="bx bx-calendar me-2 text-muted"></i>
+                  <span id="navbar-datetime" class="text-muted small"></span>
+                </div>
+
+                <!-- Bank Information -->
+                <div class="navbar-bank-info me-4">
+                  <span class="text-muted small">Demo Bank: Head Office</span>
+                </div>
 
                 <ul class="navbar-nav flex-row align-items-center ms-auto">
                   <!-- User -->
@@ -660,6 +672,44 @@
     <!-- Dashboard Analytics JS -->
     <script src="js/dashboard-analytics.js"></script>
     
+    <!-- Navbar Date/Time Updater -->
+    <script>
+      (function() {
+        function updateDateTime() {
+          const datetimeElement = document.getElementById('navbar-datetime');
+          if (!datetimeElement) return;
+          
+          const now = new Date();
+          
+          // Format date: DD-MMM-YYYY
+          const day = String(now.getDate()).padStart(2, '0');
+          const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+          const month = monthNames[now.getMonth()];
+          const year = now.getFullYear();
+          
+          // Format time: HH:MM:SS
+          const hours = String(now.getHours()).padStart(2, '0');
+          const minutes = String(now.getMinutes()).padStart(2, '0');
+          const seconds = String(now.getSeconds()).padStart(2, '0');
+          
+          datetimeElement.textContent = `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`;
+        }
+        
+        // Update immediately
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function() {
+            updateDateTime();
+            // Update every second
+            setInterval(updateDateTime, 1000);
+          });
+        } else {
+          updateDateTime();
+          // Update every second
+          setInterval(updateDateTime, 1000);
+        }
+      })();
+    </script>
+
     <!-- Logout Handler -->
     <script>
       (function() {

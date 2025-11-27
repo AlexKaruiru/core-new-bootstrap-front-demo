@@ -9,24 +9,36 @@
     </a>
   </div>
 
-  <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-    <!-- Search -->
-    <div class="navbar-nav align-items-center">
-      <div class="nav-item d-flex align-items-center">
-        <i class="bx bx-search fs-4 lh-0"></i>
-        <input
-          type="text"
-          class="form-control border-0 shadow-none"
-          placeholder="Search..."
-          aria-label="Search..."
-        />
-      </div>
-    </div>
-    <!-- /Search -->
+              <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                <!-- Search -->
+                <div class="navbar-nav align-items-center">
+                  <div class="nav-item d-flex align-items-center">
+                    <i class="bx bx-search fs-4 lh-0 me-2"></i>
+                    <input
+                      type="text"
+                      class="form-control border-0 shadow-none"
+                      placeholder="Search..."
+                      aria-label="Search..."
+                      style="min-width: 250px;"
+                    />
+                  </div>
+                </div>
+                <!-- /Search -->
 
-    <ul class="navbar-nav flex-row align-items-center ms-auto">
-      <!-- User -->
-      <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <!-- Date and Time -->
+                <div class="navbar-date-time d-flex align-items-center ms-3 me-3">
+                  <i class="bx bx-calendar me-2 text-muted"></i>
+                  <span id="navbar-datetime" class="text-muted small"></span>
+                </div>
+
+                <!-- Bank Information -->
+                <div class="navbar-bank-info me-4">
+                  <span class="text-muted small">Demo Bank: Head Office</span>
+                </div>
+
+                <ul class="navbar-nav flex-row align-items-center ms-auto">
+                  <!-- User -->
+                  <li class="nav-item navbar-dropdown dropdown-user dropdown">
         <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
           <div class="avatar avatar-online">
             <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'avatar-initial rounded bg-label-primary\'><i class=\'bx bx-user\'></i></span>';" />
